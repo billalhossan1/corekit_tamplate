@@ -1,4 +1,5 @@
 import 'package:get/get.dart';
+import 'package:ride_sharing/screens/on_boarding_screen/on_boarding_screen.dart';
 import '../screens/about_us_screen/about_us_screen.dart';
 import '../screens/app_navigation_screen/app_navigation_screen.dart';
 import '../screens/auth_all_screens/change_password_screen/change_password_screen.dart';
@@ -23,6 +24,7 @@ List<GetPage> appRootRoutesFile = <GetPage>[
   GetPage(name: AppRoutes.instance.notFoundScreen, binding: SplashScreenBinding(), page: () => const ErrorScreen()),
   ///////////////////////  auth all start
   GetPage(name: AppRoutes.instance.loginScreen, binding: AuthBinding(), page: () => const LoginScreen(), middlewares: [InternetCheckMiddleWare()]),
+  GetPage(name: AppRoutes.instance.onBoardingScreen, binding: AuthBinding(), page: () => const OnBoardingScreen(), middlewares: [InternetCheckMiddleWare()]),
   GetPage(name: AppRoutes.instance.forgotScreen, binding: AuthBinding(), page: () => const ForgotScreen(), middlewares: [InternetCheckMiddleWare()]),
   GetPage(name: AppRoutes.instance.signUpScreen, binding: AuthBinding(), page: () => const SignUpScreen(), middlewares: [InternetCheckMiddleWare()]),
   GetPage(name: AppRoutes.instance.otpVerificationScreen, binding: AuthBinding(), page: () => const OtpVerificationScreen(), middlewares: [InternetCheckMiddleWare()]),

@@ -9,6 +9,7 @@ class AppApiEndPoint {
   final String domain = _getDomain();
   final String baseUrl = "${_getDomain()}/api/v1";
   final String liveServer = "https://test.com";
+  final String refreshToken = "https://test.com";
 }
 
 String _getDomain() {

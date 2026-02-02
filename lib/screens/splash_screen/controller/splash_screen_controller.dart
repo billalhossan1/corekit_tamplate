@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:ride_sharing/services/share_pref_helper/share_pref_helper.dart';
 
 import '../../../routes/app_routes.dart';
 import '../../../utils/error_log.dart';
@@ -17,14 +16,15 @@ class SplashScreenController extends GetxController {
         animation2.value = 1.0;
       });
 
-      bool value =await SharePrefsHelper.getBool(SharedPreferenceValue.isOnboarding)??false;
+      // bool value =await SharePrefsHelper.getBool(SharedPreferenceValue.isOnboarding)??false;
       Future.delayed(Duration(seconds: 3), () {
-        if (value) {
-          Get.offAllNamed(AppRoutes.instance.appNavigationScreen);
-        } else {
-          Get.offAllNamed(AppRoutes.instance.wellCome);
-        }
-      });
+      //   if (value) {
+          Get.offAllNamed(AppRoutes.instance.onBoardingScreen);
+        // } else {
+        //   Get.offAllNamed(AppRoutes.instance.wellCome);
+        // }
+      }
+      );
     } catch (e) {
       errorLog("onInitialDataLoadScreen", e);
       WidgetsBinding.instance.addPostFrameCallback((_) {

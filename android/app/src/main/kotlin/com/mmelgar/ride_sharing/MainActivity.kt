@@ -1,4 +1,4 @@
-package com.mmelgar.ride_sharing
+package com.mmelgar.ridesharing
 
 import io.flutter.embedding.android.FlutterActivity
 

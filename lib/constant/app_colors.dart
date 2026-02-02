@@ -5,9 +5,12 @@ class AppColors {
   static final AppColors _instance = AppColors._privateConstructor();
   static AppColors get instance => _instance;
   ////////////////  app primary use color
-  final Color primary = const Color(0xff007BFF);
+  final Color primary = const Color(0xff0F172A);
+  final Color whiteButton = const Color(0xffFBFBFB);
+  final Color textGrey = const Color(0xff64748B);
   final Color boxBg = const Color(0xffEBF4FF);
   final Color boxBg2 = const Color(0xffBDD3EC);
+  final Color splashBg = const Color(0xff0F172A);
   final Color primaryTextColor = const Color(0xff333333);
   final Color subTextColor = const Color(0xff757575);
   final Color textColor = const Color(0xff333333);
@@ -71,6 +74,8 @@ class AppColors {
 
   /////////////// white color
   final Color white50 = const Color(0xfffdfdfd);
+  final Color whiteLow = const Color(0xffFBFBFB);
+  final Color white = const Color(0xffFFFFFF);
   final Color white100 = const Color(0xfffafafa);
   final Color white200 = const Color(0xfff7f7f7);
   final Color white300 = const Color(0xfff4f4f4);

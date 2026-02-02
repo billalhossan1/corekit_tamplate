@@ -1,4 +1,5 @@
 import 'package:get/get.dart';
+import 'package:ride_sharing/screens/on_boarding_screen/controller/on_boarding_screen_controller.dart';
 import '../../screens/auth_all_screens/change_password_screen/controller/change_password_screen_controller.dart';
 import '../../screens/auth_all_screens/forgot_screen/controller/forgot_screen_controller.dart';
 import '../../screens/auth_all_screens/login_screen/controller/login_screen_controller.dart';
@@ -11,6 +12,7 @@ class AuthBinding extends Bindings {
     Get.lazyPut(() => LoginScreenController());
     Get.lazyPut(() => ForgotScreenController());
     Get.lazyPut(() => OtpVerificationController());
+    Get.lazyPut(() => OnBoardingScreenController());
     Get.lazyPut(() => SignUpController());
     Get.lazyPut(() => ChangePasswordScreenController());
   }

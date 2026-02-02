@@ -13,6 +13,8 @@ class OtpVerificationScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    AppSize.size = MediaQuery.of(context).size;
+
     return GetBuilder(
       init: OtpVerificationController(),
       builder: (controller) {

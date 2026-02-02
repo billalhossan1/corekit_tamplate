@@ -41,7 +41,8 @@ dependencies:
   core_kit:
     git:
       url: https://github.com/kmmuzahid/flutter_core_kit.git
-      ref: 1.0.11
+      ref: 1.0.14
+  file_picker: ^10.3.10
 
 dev_dependencies:
   flutter_test:
@@ -53,6 +54,8 @@ dev_dependencies:
   # package. See that file for information about deactivating specific lint
   # rules and activating additional ones.
   flutter_lints: ^5.0.0
+  flutter_gen_runner:
+  build_runner:
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec

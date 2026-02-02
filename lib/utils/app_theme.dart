@@ -6,6 +6,7 @@ ThemeData appThemeData = ThemeData.light(useMaterial3: true).copyWith(
   dividerColor: AppColors.instance.transparent,
   appBarTheme: AppBarTheme(backgroundColor: AppColors.instance.white50),
   inputDecorationTheme: InputDecorationTheme(
+
     border: OutlineInputBorder(borderRadius: BorderRadius.circular(10), borderSide: BorderSide(color: AppColors.instance.border)),
     focusedBorder: OutlineInputBorder(borderRadius: BorderRadius.circular(10), borderSide: BorderSide(color: AppColors.instance.border)),
     enabledBorder: OutlineInputBorder(borderRadius: BorderRadius.circular(10), borderSide: BorderSide(color: AppColors.instance.border)),
@@ -19,7 +20,27 @@ ThemeData appThemeData = ThemeData.light(useMaterial3: true).copyWith(
     surfaceTintColor: AppColors.instance.white50,
     elevation: 0,
   ),
-  buttonTheme: ButtonThemeData(hoverColor: AppColors.instance.transparent, highlightColor: AppColors.instance.transparent),
-  elevatedButtonTheme: ElevatedButtonThemeData(style: ButtonStyle(overlayColor: WidgetStatePropertyAll(AppColors.instance.transparent), mouseCursor: WidgetStatePropertyAll(MouseCursor.defer))),
-  textButtonTheme: TextButtonThemeData(style: ButtonStyle(overlayColor: WidgetStatePropertyAll(AppColors.instance.transparent), mouseCursor: WidgetStatePropertyAll(MouseCursor.defer))),
+  buttonTheme: ButtonThemeData(hoverColor: AppColors.instance.transparent, highlightColor: AppColors.instance.transparent,minWidth: double.infinity),
+  elevatedButtonTheme: ElevatedButtonThemeData(
+    style: ButtonStyle(
+      overlayColor: MaterialStatePropertyAll(AppColors.instance.transparent),
+      mouseCursor: MaterialStatePropertyAll(MouseCursor.defer),
+      fixedSize: MaterialStatePropertyAll(
+        const Size(double.infinity, 50), // full width, 50 height
+      ),
+      // OR minimumSize if you want it to grow with child
+      // minimumSize: MaterialStatePropertyAll(Size(double.infinity, 50)),
+    ),
+  ),
+
+  textButtonTheme: TextButtonThemeData(
+    style: ButtonStyle(
+      overlayColor: MaterialStatePropertyAll(AppColors.instance.transparent),
+      mouseCursor: MaterialStatePropertyAll(MouseCursor.defer),
+      fixedSize: MaterialStatePropertyAll(
+        const Size(double.infinity, 45),
+      ),
+    ),
+  ),
+
 );
