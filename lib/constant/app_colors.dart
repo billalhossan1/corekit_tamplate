@@ -5,7 +5,7 @@ class AppColors {
   static final AppColors _instance = AppColors._privateConstructor();
   static AppColors get instance => _instance;
   ////////////////  app primary use color
-  final Color primary = const Color(0xff0F172A);
+  final Color primary = const Color(0xff6C63FF);
   final Color whiteButton = const Color(0xffFBFBFB);
   final Color textGrey = const Color(0xff64748B);
   final Color boxBg = const Color(0xffEBF4FF);
@@ -25,6 +25,7 @@ class AppColors {
   final Color orange = const Color(0xFFF17600);
   final Color highlight = const Color(0xFF8DB501);
   final Color transparent = Colors.transparent;
+  final Color screenBg = Color(0xffF0F0F2);
 
   ////////////////  app primary use blue color
   final Color primary50 = const Color(0xffe6f2ff);

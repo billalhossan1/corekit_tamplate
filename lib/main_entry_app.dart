@@ -32,13 +32,14 @@ class MainEntryApp extends StatelessWidget {
       scaffoldMessengerKey: appScaffoldMessengerKey,
       builder: (context, child) {
         return CoreKit.init(
-          back: () {
-            Get.back();
-          },
+        appbarConfig: AppbarConfig(
+          backButton: GestureDetector(onTap: Get.back,child: Icon(Icons.arrow_back_ios)),
+          onBack: Get.back
+        ),
           designSize: const Size(393, 690),
           imageBaseUrl: AppApiEndPoint.instance.baseUrl,
           navigatorKey: Get.key,
-          backButton: GestureDetector(onTap: Get.back,child: Icon(Icons.arrow_back_ios)),
+
           dioServiceConfig: DioServiceConfig(
             baseUrl: AppApiEndPoint.instance.baseUrl,
             refreshTokenEndpoint: AppApiEndPoint.instance.refreshToken,

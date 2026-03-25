@@ -205,8 +205,8 @@ packages:
     dependency: "direct main"
     description:
       path: "."
-      ref: "1.0.14"
-      resolved-ref: "48fc6790adcd2323b7977ed1f4a5c51e39fca556"
+      ref: "1.0.44"
+      resolved-ref: "747f038cea0c89e49468d384a5a41e49ca59182d"
       url: "https://github.com/kmmuzahid/flutter_core_kit.git"
     source: git
     version: "0.0.1"
@@ -359,14 +359,6 @@ packages:
     description: flutter
     source: sdk
     version: "0.0.0"
-  flutter_auto_size_text:
-    dependency: transitive
-    description:
-      name: flutter_auto_size_text
-      sha256: eba9a0053ab13703eca8468754940f1567cfd364b5aa7225420ea5ec3c02b83e
-      url: "https://pub.dev"
-    source: hosted
-    version: "4.1.0"
   flutter_cache_manager:
     dependency: transitive
     description:
@@ -424,7 +416,7 @@ packages:
     source: hosted
     version: "2.0.33"
   flutter_svg:
-    dependency: "direct main"
+    dependency: transitive
     description:
       name: flutter_svg
       sha256: "87fbd7c534435b6c5d9d98b01e1fd527812b82e68ddd8bd35fc45ed0fa8f0a95"
